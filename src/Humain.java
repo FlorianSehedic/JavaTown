@@ -8,8 +8,16 @@ public class Humain {
 		boisson = uneBoisson;
 	}
 	
-	public String parle() {
-		return "Bonjour, je m'appel "+nom+" et ma boisson favorite est "+boisson+".";
+	public void presentation() {
+		parle("Bonjour, je m'appelle "+nom+" et ma boisson favorite est "+boisson+".");
+	}
+	
+	public void parle(String texte) {
+		System.out.println(nom+" - "+texte);
+	}
+	
+	public void boire() {
+		parle("Ah un bon verre de "+boisson+" ! GLOUPS !");
 	}
 	
 	public String quelEstTonNom() {

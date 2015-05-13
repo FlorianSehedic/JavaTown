@@ -3,8 +3,11 @@ public class Histoire {
 
 	public static void main(String[] args) {
 
-		Humain Humain1 = new Humain("Clint Eastwood", "l'eau");
-		System.out.println(Humain1.parle());
+		Humain humain1 = new Humain("Clint Eastwood", "l'eau");
+		humain1.presentation();
+		humain1.boire();
+		Brigand brigand1 = new Brigand("Louis", "biere");
+		brigand1.presentation();
 		
 	}
 
