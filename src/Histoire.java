@@ -6,12 +6,14 @@ public class Histoire {
 		Humain humain1 = new Humain("Florian", "l'eau");
 		humain1.presentation();
 		humain1.boire();
-		Brigand brigand1 = new Brigand("Louis", "la biere");
+		Brigand brigand1 = new Brigand("Louis", "la biere", "méchand", 5, 1000, false);
 		brigand1.presentation();
-		Dame dame1 = new Dame("Celia", "l'eau", "rouge", "captive");
+		Dame dame1 = new Dame("Celia", "l'eau", "rose", "captive");
 		dame1.presentation();
+		brigand1.capturerDame();
 		dame1.kidnapper();
 		dame1.changerRobe();
+		
 	}
 
 

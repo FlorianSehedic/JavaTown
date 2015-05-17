@@ -10,7 +10,6 @@ public class Dame extends Humain{
 		unEtat = etat;
 	}
 	
-	
 	public void parleDame(String texte) {
 		System.out.println(nom+" - "+texte);
 	}
@@ -20,5 +19,9 @@ public class Dame extends Humain{
 	}
 	public void changerRobe() { // Ne Fonctione pas, la couleur est NULL
 		parle("Ma nouvelle robe est "+couleurRobe);
+	}
+	
+	public String couleurDeLaRobe() {
+		return couleurRobe;
 	}
 }
