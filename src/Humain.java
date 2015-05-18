@@ -17,7 +17,10 @@ public class Humain {
 	}
 	
 	public void boire() {
-		parle("Ah un bon verre de "+boisson+" ! GLOUPS !");
+		if ( boisson == "l'eau") {
+			String boisson = "d'eau";
+			parle("Ah un bon verre de "+boisson+" ! GLOUPS !");
+		}
 	}
 	
 	public String quelEstTonNom() {
@@ -27,5 +30,4 @@ public class Humain {
 	public String quelEstTaBoisson() {
 		return boisson;
 	}
-	
 }

@@ -17,11 +17,13 @@ public class Dame extends Humain{
 	public void kidnapper() {
 		parle("On me kidnappe, au secours !!!");
 	}
-	public void changerRobe() { // Ne Fonctione pas, la couleur est NULL
-		parle("Ma nouvelle robe est "+couleurRobe);
-	}
 	
-	public String couleurDeLaRobe() {
-		return couleurRobe;
+	public void couleurDeLaRobe() {
+		if ( couleurRobe == null) {
+			parle("Ma nouvelle robe est rose.");
+		}
+		else {
+			parle("Ma nouvelle robe est "+couleurRobe);
+		}
 	}
 }

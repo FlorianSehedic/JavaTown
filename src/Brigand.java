@@ -19,6 +19,13 @@ public class Brigand extends Humain{
 	}
 	
 	public void capturerDame() {
-		parle("Ah ah !, "+nom+" tu es mienne désormais !");
+		if ( nom == null) {
+			parle("Ah ah !, Celia tu es mienne désormais !");
+		}
+	}
+	
+	
+	public int quelEstLaPrime() {
+		return prime;
 	}
 }
