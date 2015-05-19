@@ -24,7 +24,6 @@ public class Brigand extends Humain{
 		}
 	}
 	
-	
 	public int quelEstLaPrime() {
 		return prime;
 	}
