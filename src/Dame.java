@@ -6,8 +6,8 @@ public class Dame extends Humain{
 	
 	public Dame(String unNom, String uneBoisson, String uneCouleurRobe, String unEtat) {
 		super(unNom, uneBoisson);
-		uneCouleurRobe = couleurRobe;
-		unEtat = etat;
+		couleurRobe = uneCouleurRobe;
+		etat = unEtat ;
 	}
 	
 	public void parleDame(String texte) {
@@ -19,11 +19,6 @@ public class Dame extends Humain{
 	}
 	
 	public void couleurDeLaRobe() {
-		if ( couleurRobe == null) {
-			parle("Ma nouvelle robe est rose.");
-		}
-		else {
 			parle("Ma nouvelle robe est "+couleurRobe);
-		}
 	}
 }
